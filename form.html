@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokhrel Hotel and Lodge - Reservation</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        /* Additional styles specific to the form page */
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        .form-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-heading h2 {
+            color: #333;
+            font-size: 28px;
+            border-bottom: 2px solid #07caec;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+        }
+        
+        .date-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        input[type="reset"],
+        input[type="submit"] {
+            padding: 12px 25px;
+            border-radius: 20px;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Navigation menu styling */
+        .nav-menu {
+            background-color: #5a5959;
+            padding: 12px 0;
+            text-align: center;
+            width: 100px;
+            margin: 10px 0 0 10px;
+            border-radius: 10px;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: #07caec;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="headbox">
+            <img src="images/logo1.png" alt="Hotel Logo" width="300px">
+            <h1>Pokhrel Hotel and Lodge</h1>
+        </div>
+    </header>
+    
+    <div class="nav-menu">
+        <a href="newhome.html">Back</a>
+    </div>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="form-heading">
+                <h2>Reservation Form</h2>
+            </div>
+            
+            <form method="post" action="https://script.google.com/macros/s/AKfycby436bDFlC8bBDIvUg_i5IYU1c_0WOo5b2yOeN8i24fSJMrO-24PYTC9iNjIY-_isL9GA/exec" name="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your full name" minlength="6" maxlength="25" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="adress">Address:</label>
+                    <input type="text" name="adress" id="adress" placeholder="Enter your complete address" minlength="6" maxlength="30" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="yourname@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" name="phone" id="phone" placeholder="+977-9800000000" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Reservation Date:</label>
+                    <div class="date-group">
+                        <label for="from">From</label>
+                        <input type="date" name="from" id="from" required min="" />
+                        <label for="to">to</label>
+                        <input type="date" name="to" id="to" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Room Type:</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="Ac" value="Ac" name="roomtype">
+                            <label for="Ac">AC Room</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="Atr" value="Attach Room" name="roomtype">
+                            <label for="Atr">Attach Bathroom</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="Nsingle" value="Normal single Room" name="roomtype">
+                            <label for="Nsingle">Normal Single Bed</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="Ndoub" value="Normal Double Room" name="roomtype">
+                            <label for="Ndoub">Normal Double Bed</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="no-of-room">Number of Rooms:</label>
+                    <input type="number" name="no of room" id="no-of-room" min="0" max="12" value="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment">Payment Type:</label>
+                    <select id="payment" name="payment">
+                        <option>E-sewa</option>
+                        <option>Khalti</option>
+                        <option>IME Pay</option>
+                        <option>Bank Transfer</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="addinfo">Additional Requests:</label>
+                    <textarea name="addinfo" id="addinfo" rows="4" placeholder="Any special requirements or requests"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <div class="radio-option">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to the terms and conditions.</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Id">Citizenship Photo:</label>
+                    <input type="file" name="Id" id="Id" accept="image/png, image/jpeg">
+                </div>
+                
+                <div class="buttons">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Pokhrel Hotel and Lodge. All rights reserved.<br>
+        <a href="mailto:pokhrelhotel@gmail.com">pokhrelhotel@gmail.com</a> | Contact: +977-9847061397</p>
+    </footer>
+    <script>
+        document.getElementById('from').setAttribute('min', new Date().toISOString().split('T')[0]);
+        document.getElementById('to').setAttribute('min', new Date().toISOString().split('T')[0]);
+      </script>
+    <script src="main.js"></script>
+</body>
+</html>

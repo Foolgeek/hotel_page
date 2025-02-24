@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+pre{font-size: 20px;}
+img{
+    float: left;
+}
+h1{
+    color:dodgerblue;
+    font-style: italic;
+    font-size: xx-large;
+    text-shadow: 3px 3px 5px black;
+}
+
+#head1{
+    width: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(106, 52, 156);
+    border: 0px;
+    border-bottom:3px solid black ;
+}
+#head2{
+    padding: 0%;
+    margin: 0%;
+    background-color: aqua;
+}
+body{
+    background-color: hsl(182, 100%, 69%);
+    padding: 0px;
+    margin: 0%;
+    border: 0cap;
+}
+footer{
+    background-color: hsl(310, 61%, 55%);
+    width: 100vh;
+    border-top: 3px solid black;
+    border-bottom: 4px solid black;
+}
+#p2{
+    float: center;
+    font-size: medium;
+    margin-left: 20px;
+}
+
+.header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#sumbit{
+    font-size: large;
+    background-color: blueviolet;
+    color: white;
+}
+#reset{
+    font-size: large;
+    background-color: blueviolet;
+    color: white;
+}
+.b2{
+    margin: 0px;
+}
+.b2:hover{
+    cursor: pointer;
+    padding: 2px;
+    background-color: chartreuse;
+}
+
+#box3{ 
+    padding: 0px;
+    margin: 0%;
+    background-blend-mode:overlay;
+    border: 1px solid black;;
+}
+
+#container{
+    border:0cap;
+    width: 100%;
+    background-image: url(images/bed.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

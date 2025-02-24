@@ -1,0 +1,126 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+pre{
+    font-size: 20px;
+}
+
+.header{
+    border-bottom: 2px solid black;
+    margin: auto;
+    display: inline;
+}
+
+img{
+    float: left;
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    border-bottom: 2px solid black;
+}
+
+h1{
+    color:rgb(51, 74, 97);
+    font-style: italic;
+    font-size: xx-large;
+    text-shadow: 2px 2px 3px black;
+    align-self: center;
+}
+#head2{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#BH2{
+    border: none;
+    border-bottom: 3px solid black;
+    background-color: rgb(236, 202, 48);
+    padding: 5px;
+}
+
+#text{
+    background-color: aquamarine;
+    font-size: large;
+    padding: 25px;
+    min-height: 70%;
+    
+}
+
+#fmain{
+    min-height: 70%;
+    padding: 25px;
+    font-size: 1.2em;
+    background-image: url(images/bed.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#BF{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgb(236, 202, 48);
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+#form{
+    width: fit-content;
+    justify-self: center;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    -moz-box-shadow: 0px 0px 20px aqua;
+    -webkit-box-shadow: 0px 0px 20px aqua;
+    box-shadow: 0px 0px 20px aqua;
+    background-color: rgb(173, 236, 215);
+}
+#h2{
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: aqua;
+    justify-content: center;
+    padding: 5px;
+}
+
+.b1{
+    border-radius: 5px;
+    padding: 4px;
+    margin: auto;
+    background-color: hsl(128, 91%, 64%);
+    font-weight: bold;
+}
+.b1:hover{
+    background-color: hsl(128, 90%, 88%);
+    font-size: 17px;
+    cursor: pointer;
+}
+.b2:active{
+    background-color: hsl(0, 90%, 49%);
+}
+
+.b2{
+    font-size: large;
+    padding: 6px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 10px;
+    background-color: hsl(160, 98%, 49%);
+}
+.b2:hover{
+    font-size: larger;
+    background-color: hsl(160, 100%, 80%);
+    cursor: pointer;
+}
+#SB{
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
